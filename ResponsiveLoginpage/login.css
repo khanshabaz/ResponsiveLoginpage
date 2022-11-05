@@ -1,0 +1,258 @@
+body {
+  background-image: url("back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+/*------------------Navbar--------------*/
+#navheader {
+  background: linear-gradient(rgb(119, 104, 108), rgb(54, 39, 42));
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#navheader > .faa > .fa-solid {
+  font-size: 40px;
+  color: black;
+  padding-right: 7px;
+  cursor: pointer;
+}
+#navheader > .faa {
+  color: black;
+  padding-left: 10px;
+  letter-spacing: 2px;
+}
+#navheader > .faa > span {
+  padding: 2px;
+  font-size: 35px;
+  color: rgb(239, 130, 84);
+}
+nav > .nav-links {
+  display: flex;
+}
+nav > .nav-links > a {
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  padding: 5px 5px;
+  margin: 5px 5px;
+}
+nav > .nav-links > a:hover {
+  color: cyan;
+}
+nav > .nav-links > a > i {
+  padding: 5px;
+  margin: 5px;
+}
+nav > .nav-links > a > i:hover {
+  color: aqua;
+}
+.line::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: rgb(43, 237, 237);
+  transition: width 0.2s ease-out;
+}
+.line:hover::after {
+  width: 100%;
+  border-radius: 5px;
+  transition: with 0.2s;
+}
+.fa-solid {
+  color: aliceblue;
+}
+/*------------------Login form--------------*/
+#login {
+  background: linear-gradient(
+    rgb(119, 104, 108),
+    rgb(255, 126, 76),
+    rgb(54, 39, 42),
+    rgb(187, 127, 81)
+  );
+  text-align: center;
+  width: 400px;
+  color: white;
+  height: 420px;
+  position: relative;
+  top: 8px;
+  border-radius: 20px;
+  left: 1121px;
+}
+#login:hover {
+  border: 2px solid rgba(236, 87, 127, 0.5);
+  box-shadow: 0 0 20px;
+}
+#login > #log {
+  padding: 10px;
+  font-size: 30px;
+  font-weight: 600;
+  color: black;
+}
+#login > div > input[type="text"],
+#login > div > input[type="password"] {
+  width: 250px;
+  height: 20px;
+  padding: 8px;
+  margin: 8px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background-color: transparent;
+}
+#login > div > input[type="text"]:hover {
+  border: 2px solid rgba(236, 87, 127, 0.5);
+  box-shadow: 0 0 20px;
+}
+#login > div > input[type="password"]:hover {
+  border: 2px solid rgba(236, 128, 157, 0.5);
+  box-shadow: 0 0 20px;
+}
+::placeholder {
+  color: black;
+}
+#login > div > span > .fa-solid {
+  color: black;
+}
+/* --------------forgot password-------------- */
+#login > #forgot {
+  color: black;
+  width: 250px;
+  height: 20px;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  left: -10px;
+  font-weight: 500;
+  position: relative;
+  top: -13px;
+  cursor: pointer;
+}
+/* --------------Login button-------------- */
+#login > #btn {
+  width: 190px;
+  height: 32px;
+  padding: 9px;
+  margin: 10px;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  position: relative;
+  left: 81px;
+  font-weight: 600;
+  background-color: rgb(58, 26, 32);
+  border-radius: 10px;
+}
+#login > #btn:hover {
+  background-color: rgb(48, 16, 22);
+  box-shadow: 0px 0px 20px;
+  color: black;
+  cursor: pointer;
+}
+#login > #OR {
+  color: black;
+  width: 250px;
+  height: 5px;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  position: relative;
+  left: 50px;
+}
+#login > #with {
+  width: 270px;
+  height: 8px;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  position: relative;
+  left: 49px;
+}
+/* ----------------SignUp-------------------------- */
+#login > #signup {
+  color: black;
+  width: 250px;
+  height: 15px;
+  padding: 22px;
+  margin: 10px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  position: relative;
+  left: 36px;
+}
+#login > div > #facebook {
+  padding: 10px;
+  background-color: rgb(40, 85, 175);
+  border-radius: 10px;
+  margin: 5px;
+}
+#login > div > #facebook:hover {
+  background-color: black;
+  color: aqua;
+  cursor: pointer;
+}
+#login > div > #insta {
+  padding: 10px;
+  background-color: rgb(248, 45, 45);
+  margin: 5px;
+  border-radius: 10px;
+}
+#login > div > #insta:hover {
+  background-color: black;
+  color: aqua;
+  cursor: pointer;
+}
+.fa-brands {
+  padding: 5px;
+}
+#sign {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(49, 31, 34);
+  cursor: pointer;
+}
+#sign:hover {
+  color: black;
+}
+/* ----------------------Responsive-Login-------------------------------- */
+@media (min-width: 0px) and (max-width: 960px) {
+  #navheader {
+    height: 100px;
+    flex-direction: column;
+  }
+  nav > .nav-links > a {
+    position: relative;
+    top: -30px;
+  }
+  #login {
+    position: relative;
+    left: 250px;
+    top: 80px;
+  }
+}
+@media (min-width: 0px) and (max-width: 500px) {
+  #navheader {
+    height: 150px;
+    flex-direction: column;
+  }
+  nav > .nav-links > a {
+    position: relative;
+    top: -30px;
+  }
+  #login {
+    position: relative;
+    left: 50px;
+    top: 70px;
+  }
+}
